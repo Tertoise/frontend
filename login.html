@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wakudo</title>
+  <link href="css/login.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="container fixed">
+    <a href="/index.html"><img class='logo' src='img/wakudo.png' alt='logo'></a>
+    <nav class='menu'>
+      <li> <a class='menu-elements' href='index.html'>На головну</a></li>
+    </nav>
+  </header>
+  <main>
+    <div id="login">
+      <h3>Введіть ваші дані</h3>
+      <form class="create-form" action="" method="post">
+        <div class="form-group">
+          <label for="firstName">Ім'я:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Прізвище:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Номер телефону:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <button type="submit" class="cart-btn margin-y">Авторизуватися</button>
+      </form>
+    </div>
+    <div class="admin-wrapper">
+      <div id="admin-interface">
+        <h3>Адміністративний інтерфейс</h3>
+        <div id="admin-items-list" class="items-list"></div>
+        <button id="add-item" class="cart-btn margin-y">Додати елемент</button>
+        <button id="save-changes" class="cart-btn margin-y">Зберегти зміни</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p id="footer-text">WakudoFoods &copy;2024</p>
+    <div class="link">
+      <ul><a href="">Telegram</a></ul>
+      <ul><a href="">Facebook</a></ul>
+    </div>
+  </footer>
+
+  <script src="script/login.js"></script>
+</body>
+
+</html>

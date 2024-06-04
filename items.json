@@ -1,0 +1,59 @@
+[
+    {
+        "type": "sets",
+        "title": "Комайо чабурай",
+        "discount": 0.20,
+        "price": 250,
+        "image": "1.jpg"
+    },
+    {
+        "type": "sets",
+        "title": "Чайо ва ін",
+        "discount": 0,
+        "price": 210,
+        "image": "2.jpg"
+    },
+    {
+        "type": "rolls",
+        "title": "Халіф дельфін",
+        "discount": 0,
+        "price": 340,
+        "image": "3.jpg"
+    },
+    {
+        "type": "rolls",
+        "title": "Гак на масі",
+        "discount": 0.25,
+        "price": 300,
+        "image": "4.jpg"
+    },
+    {
+        "type": "sushi",
+        "title": "Чеб иш ев",
+        "discount": 0.15,
+        "price": 1120,
+        "image": "5.jpg"
+    },
+    {
+        "type": "sushi",
+        "title": "Ган те лі",
+        "discount": 0,
+        "price": 320,
+        "image": "6.jpg"
+    },
+    {
+        "type": "drinks",
+        "title": "Кола",
+        "discount": 0,
+        "price": 50,
+        "image": "cola.jpg"
+    },
+    {
+        "type": "drinks",
+        "title": "Вода",
+        "discount": 0,
+        "price": 20,
+        "image": "water.jpg"
+    }
+    
+]

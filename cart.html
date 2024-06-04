@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wakudo</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+  <header class="container fixed">
+    <a href="index.html"><img class='logo' src='img/wakudo.png' alt='logo'></a>
+    <div id="root"></div>
+    <nav class='menu'>
+      <li> <a class='menu-elements' href='index.html#products'>Товари</a></li>
+      <li id="auth-link"> <a class='menu-elements' href='login.html'>Авторизація</a></li>
+      <li> <a class='menu-elements' href='cart.html'>Кошик</a>
+        <!-- <span class = "cart-counter">0</span> -->
+      </li>
+
+    </nav>
+  </header>
+  <main class="container cart-page">
+
+    <section class="cart">
+      <h2>Ваш кошик</h2>
+      <div class="cart-items-list">
+        У кошику ще немає товарів
+      </div>
+      <div class="margin-y">
+        Сума замовлення: <span class="cart-total">0</span> грн.
+      </div>
+      <button id="orderBtn" class="cart-btn margin-y">Оформити замовлення</button>
+    </section>
+    <section class="order">
+      <h2>Оформлення замовлення</h2>
+      <form class="order-form" action="" method="post">
+        <div class="form-group user-info">
+          <label for="firstName">Ім'я:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="form-group user-info">
+          <label for="lastName">Прізвище:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+
+        <div class="form-group user-info">
+          <label for="phone">Номер телефону:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="deliveryMethod">Спосіб доставки:</label>
+          <select id="deliveryMethod" name="deliveryMethod" required>
+            <option value="standard">Самовивіз</option>
+            <option value="express">Доставка</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Адреса доставки:</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="comment">Коментар до замовлення:</label>
+          <textarea id="comment" name="comment" rows="4"></textarea>
+        </div>
+        <div class="margin-y">
+          До сплати: <span class="cart-total">0</span> грн.
+        </div>
+        <button type="submit" class="cart-btn margin-y">Підтвердити</button>
+      </form>
+
+    </section>
+
+  </main>
+  <footer>
+    <p id="footer-text">WakudoFoods <span>2024</span></p>
+    <div class="link">
+      <ul><a href="">Telegram</a></ul>
+      <ul><a href="">Facebook</a></ul>
+    </div>
+
+  </footer>
+  <script src="script/cart.js"></script>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

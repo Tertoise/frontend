@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css">
+    <title>Wakudo</title>
+  </head>
+  <body>
+    <header class="container fixed">
+      <a href="/index.html"><img class='logo' src='img/wakudo.png' alt='logo'></a>
+      <div id="root"></div>
+      <nav class='menu'>
+        <li> <a class='menu-elements' href='#food'>Товари</a></li>
+        <li id="auth-link"> <a class='menu-elements' href='login.html'>Авторизація</a></li>
+        <li> <a class='menu-elements' href='cart.html' >Кошик</a>
+          <span class = "cart-counter">0</span>
+        </li>
+        
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <h1 class="fade-in-text ">Restaurant <span id = "name">Wakudo</span></h1>
+        <h3>Fast and tasty japanese food</h3>
+      </section>
+      <section class = "food" id = "food">
+        <table>
+          <tr>
+            <td><a class = "food-elements" href = "#sets">Сети</a></td>
+            <td> <a class = "food-elements" href = "#rolls">Роли</a></td>
+            <td> <a class = "food-elements" href = "#sushi">Суші</a></td>
+            <td> <a class = "food-elements" href = "#drinks">Напої</a></td>
+          </tr>
+        </table>
+      </section>
+      <section class="discounts">  
+        <div class = "discount-list" id="discounts-list">
+          
+        </div>
+      </section>
+      <section class = "sets" id = "sets">
+        <h3>Сети</h3>
+        <div class = "discount-list" id = "sets-list">
+          
+        </div>
+      </section>
+      <section class = "rolls" id = "rolls">
+        <h3>Роли</h3>
+        <div class = "discount-list" id = "rolls-list">
+          
+        </div>
+      </section>
+      <section class = "sushi" id = "sushi">
+        <h3>Суші</h3>
+        <div class = "discount-list" id = "sushi-list">
+          
+        </div>
+      </section>
+      <section class = "drinks" id = "drinks">
+        <h3>Напої</h3>
+        <div class = "discount-list" id= "drinks-list">
+          
+        </div>
+      </section>
+      
+    </main>
+    <footer>
+          <p id = "footer-text">WakudoFoods <span>2024</span></p>
+          <div class = "link">
+            <ul><a href="">Telegram</a></ul>
+            <ul><a href="">Facebook</a></ul>
+          </div>
+  
+    </footer>
+    
+    <script src="script/index.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

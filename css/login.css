@@ -1,0 +1,92 @@
+#login {
+  width: 50%;
+  height: 70%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #280101;
+}
+
+main {
+  margin-top: 20%;
+}
+
+#login h3 {
+  display: block;
+  text-align: center;
+}
+
+.form-group {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#login .cart-btn {
+  margin: 0 auto;
+}
+
+.admin-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+#admin-interface {
+  display: none;
+  width: 60%; 
+  background-color: #280101; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item, .item-headers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-headers {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.item-headers span, .item input, .item select {
+  flex: 1;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.item-headers span {
+  display: inline-block;
+}
+
+.item input[type="text"] {
+  width: 100%;
+}
+
+.item input[type="number"] {
+  width: 100%;
+}
+
+.item select {
+  width: 100%;
+}
+
+.item button {
+  background-color: #ff6669;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  flex: 1;
+}

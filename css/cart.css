@@ -1,0 +1,102 @@
+.cart-page {
+  margin-top: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+.cart {
+  width: 100%;
+  max-width: 600px; 
+  transition-duration: .2s;
+  opacity: 1;
+  margin: auto;
+}
+.cart-items-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20;
+}
+
+.cart-item {
+  border: 1px solid rgb(83, 83, 83);
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-page {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.margin-y {
+  margin: 30px 0;
+}
+
+.cart-total {
+  color: #ff6669;
+}
+
+.order {
+  width: 100%;
+  padding: 20px;
+  display: none;
+  opacity: 0; 
+}
+
+.order.show {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cart.hide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.cart {
+  width: 100%;
+  transition-duration: .2s;
+  opacity: 1; 
+  
+}
+
+.order-form h1 {
+  text-align: center;
+}
+
+.order-form .form-group {
+  margin-bottom: 20px;
+}
+
+.order-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.order-form input[type="text"],
+.order-form input[type="tel"],
+.order-form textarea,
+.order-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.cart input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  max-width: 50px;
+}
