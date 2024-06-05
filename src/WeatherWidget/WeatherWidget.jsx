@@ -33,6 +33,10 @@ const WeatherWidget = () => {
       return "На вулиці дощик, але доставка завжди поруч";
     } else if (description.includes("thunderstorm")) {
       return "Гроза не завадить доставити вам суші";
+    } else if (temp < 0) {
+      return "Мінус за вікном, але з нами завжди плюс";
+    } else if (temp > 30) {
+      return "Спека така, от би чогось холоденького";
     } else if (description.includes("snow")) {
       return "Ніщо не доповнює зимовий настрій так, як суші";
     } else if (description.includes("fog") || description.includes("mist")) {
@@ -45,10 +49,6 @@ const WeatherWidget = () => {
       } else {
         return "Можливо буде дощ, краще замовити доставку";
       }
-    } else if (temp < 0) {
-      return "Мінус за вікном, але з нами завжди плюс";
-    } else if (temp > 30) {
-      return "Спека така, от би чогось холодненького";
     } else {
       return "Саме час щось купити";
     }

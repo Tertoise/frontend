@@ -142,7 +142,7 @@ header{
   background-size: cover;
   background-position: center;
   color: white;
-  overflow: hidden; /* Додано для приховування псевдоелемента */
+  overflow: hidden; 
 }
 
 .discount-item::before {
@@ -152,15 +152,15 @@ header{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Тло для затемнення */
-  z-index: 0; /* Псевдоелемент буде під текстом */
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
 }
 
 .discount-item h3,
 .discount-item .btn-price {
   position: relative;
-  z-index: 1; /* Зробити текст поверх затемнення */
-  background-color: rgba(0, 0, 0, 0); /* Залишити прозорим фон для тексту */
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .btn-price {

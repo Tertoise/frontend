@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: transparent; /* Matches header background */
+  background-color: transparent;
   padding: 0;
   border-radius: 10px;
   color: white; 
